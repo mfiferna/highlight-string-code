@@ -1,0 +1,74 @@
+{
+    "scopeName": "string-js.injection",
+    "name": "source.stringcode",
+    "injectionSelector": "L:source",
+    "repository": {
+        "keep-variable": {
+            "patterns": [
+                {
+                    "begin": "(\\{)",
+                    "end": "(\\})",
+                    "beginCaptures": {
+                        "1": {
+                            "name": "punctuation.section.embedded.begin"
+                        }
+                    },
+                    "endCaptures": {
+                        "1": {
+                            "name": "punctuation.section.embedded.end"
+                        }
+                    },
+                    "contentName": "variable"
+                }
+            ]
+        },
+        "keep-variables": {
+            "patterns": [
+                {
+                    "begin": "(`|'|\")",
+                    "end": "(`|'|\")",
+                    "captures": {
+                        "1": {
+                            "name": "string.quoted"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "include": "string.quoted"
+                        },
+                        {
+                            "include": "#keep-variable"
+                        }
+                    ],
+                    "contentName": "string.quoted"
+                },
+                {
+                    "include": "#keep-variable"
+                }
+            ]
+        }
+    },
+    "patterns": [
+        {
+            "begin": "(// *(begin-js|beginjs|js).*)",
+            "end": "(// *(end-js|endjs|end))",
+            "captures": {
+                "1": {
+                    "name": "comment.line.double-slash.js"
+                },
+                "2": {
+                    "name": "entity.name.function"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "#keep-variables"
+                },
+                {
+                    "include": "source.js"
+                }
+            ],
+            "contentName": "meta.embedded"
+        }
+    ]
+}

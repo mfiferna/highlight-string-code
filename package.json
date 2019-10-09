@@ -1,8 +1,8 @@
 {
     "name": "highlight-string-code",
     "displayName": "Highlight String Code",
-    "description": "Highlight string as a specific language",
-    "version": "0.3.4",
+    "description": "Highlight string as SQL, HTML, CSS or JavaScript",
+    "version": "0.3.5",
     "publisher": "iuyoy",
     "author": {
         "name": "iuyoy"
@@ -22,40 +22,51 @@
         "Programming Languages",
         "Snippets"
     ],
-    "tags":[
+    "tags": [
         "SQL",
         "HTML"
     ],
     "contributes": {
-        "languages": [
-            {
-                "id": "any",
-                "extensions": [
-                    ".*"
-                ]
-            }
-        ],
         "grammars": [
             {
-                "language": "any",
                 "path": "./syntaxes/highlight-html-string.json",
                 "scopeName": "string-html.injection",
                 "injectTo": [
                     "source"
                 ],
                 "embeddedLanguages": {
-                    "meta.embedded.block.html": "html"
+                    "meta.embedded.block.html": "source.html"
                 }
             },
             {
-                "language": "any",
+                "path": "./syntaxes/highlight-js-string.json",
+                "scopeName": "string-js.injection",
+                "injectTo": [
+                    "source"
+                ],
+                "embeddedLanguages": {
+                    "meta.embedded.js": "source.js"
+                }
+            },
+            {
+                "path": "./syntaxes/highlight-css-string.json",
+                "scopeName": "string-css.injection",
+                "injectTo": [
+                    "source.python"
+                ],
+                "embeddedLanguages": {
+                    "meta.embedded.inline.css": "css"
+                }
+                
+            },
+            {
                 "path": "./syntaxes/highlight-sql-string.json",
                 "scopeName": "string-sql.injection",
                 "injectTo": [
                     "source"
                 ],
                 "embeddedLanguages": {
-                    "meta.embedded.sql": "sql"
+                    "meta.embedded.sql": "source.sql"
                 }
             }
         ]

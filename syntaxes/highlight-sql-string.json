@@ -125,7 +125,7 @@
                     "include": "source.sql"
                 }
             ],
-            "contentName": "source.stringcode, meta.embedded"
+            "contentName": "source.stringcode meta.embedded.sql"
         }
     ]
 }

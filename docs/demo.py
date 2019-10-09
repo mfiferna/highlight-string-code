@@ -1,3 +1,4 @@
+# ANCHOR SQL
 single_SQL_with_Sign = """
 --sql Highlight
 select `last_name`, start_day, COUNT(*) AS num_entries
@@ -45,6 +46,7 @@ select column_name from schema_name.table_name;
 
 sql = 'SELECT * FROM schema_name.table_name;'
 
+# ANCHOR HTML
 HTML = """
 <!--html-->
 <h1>I am a lighlighted html</h1>
@@ -55,6 +57,31 @@ hello
 <h1>I am also a lighlighted html</h1>
 <!--!htmlcomment-->
 <h1>I amd not a lighlighted html</h1>
+"""
+# ANCHOR JS
+js = """
+//js test
+var a = 1;
+alert(a);
+console.log(a);
+function b() {
+    return 123;
+};
+//end
+var a = 1;
+alert(a);
+console.log(a);
+function b() {
+    return 123;
+};
+"""
+# ANCHOR CSS
+css = """
+body {
+    display: block;
+    margin: 8px;
+    color: #fff;
+}
 """
 
 # ANCHOR variable test

@@ -1,0 +1,30 @@
+{
+    "fileTypes": [],
+    "scopeName": "string-css.injection",
+    "injectionSelector": "L:source.python",
+    "patterns": [
+        {
+            "include": "#highlight-string-css"
+        }
+    ],
+    "repository": {
+        "highlight-string-css": {
+            "begin": "(/\\*(css).*\\*/)",
+            "end": "(/\\*(\\!css).*\\*/)",
+            "captures": {
+                "1": {
+                    "name": "comment.inline.css"
+                },
+                "2": {
+                    "name": "meta.embedded"
+                }
+            },
+            "contentName": "text.html.derivative meta.embedded.block.html meta.embedded.inline.css",
+            "patterns": [
+                {
+                    "include": "source.css"
+                }
+            ]
+        }
+    }
+}
