@@ -10,6 +10,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - [ ] Add Chinese usage
 
 ## [Realease]
+
+### [v0.4.0]
+- Reconstitute language injections
+- Add embeddedLanguages and tokenTypes features to support commenting, bracket matching, auto closing pairs, snippet selection and so on.
+  
+### [v0.3.4]
 - Add a WHITESPACE in third SQL start matching rule.
 
 ## [Unreleased]

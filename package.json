@@ -1,8 +1,8 @@
 {
     "name": "highlight-string-code",
     "displayName": "Highlight String Code",
-    "description": "Highlight string as SQL, HTML, CSS or JavaScript",
-    "version": "0.3.5",
+    "description": "Highlight string as SQL, HTML, CSS or JavaScript in most languages",
+    "version": "0.4.0",
     "publisher": "iuyoy",
     "author": {
         "name": "iuyoy"
@@ -22,51 +22,66 @@
         "Programming Languages",
         "Snippets"
     ],
-    "tags": [
-        "SQL",
-        "HTML"
+    "keywords": [
+        "javascript",
+        "css",
+        "html",
+        "sql",
+        "hive",
+        "highlight"
     ],
     "contributes": {
         "grammars": [
             {
-                "path": "./syntaxes/highlight-html-string.json",
-                "scopeName": "string-html.injection",
+                "path": "./syntaxes/highlight-string-code.json",
+                "scopeName": "highlight-string-code",
                 "injectTo": [
-                    "source"
+                    "source.go",
+                    "source.python",
+                    "source.css",
+                    "source.clojure",
+                    "source.perl",
+                    "source.perl.6",
+                    "source.rust",
+                    "source.fsharp",
+                    "source.r",
+                    "source.java",
+                    "text.html.basic",
+                    "text.html.derivative",
+                    "source.php",
+                    "text.html.php",
+                    "source.lua",
+                    "source.asp.vb.net",
+                    "source.powershell",
+                    "source.ts",
+                    "source.tsx",
+                    "source.c",
+                    "source.cpp",
+                    "source.c.platform",
+                    "source.swift",
+                    "source.shell",
+                    "source.cs",
+                    "source.batchfile",
+                    "source.groovy",
+                    "source.coffee",
+                    "source.js.jsx",
+                    "source.js",
+                    "source.js.regexp",
+                    "source.objc",
+                    "source.objcpp",
+                    "source.ruby",
+                    "source",
+                    "text"
                 ],
                 "embeddedLanguages": {
-                    "meta.embedded.block.html": "source.html"
-                }
-            },
-            {
-                "path": "./syntaxes/highlight-js-string.json",
-                "scopeName": "string-js.injection",
-                "injectTo": [
-                    "source"
-                ],
-                "embeddedLanguages": {
-                    "meta.embedded.js": "source.js"
-                }
-            },
-            {
-                "path": "./syntaxes/highlight-css-string.json",
-                "scopeName": "string-css.injection",
-                "injectTo": [
-                    "source.python"
-                ],
-                "embeddedLanguages": {
-                    "meta.embedded.inline.css": "css"
-                }
-                
-            },
-            {
-                "path": "./syntaxes/highlight-sql-string.json",
-                "scopeName": "string-sql.injection",
-                "injectTo": [
-                    "source"
-                ],
-                "embeddedLanguages": {
-                    "meta.embedded.sql": "source.sql"
+                    "meta.embedded.block.css": "css",
+                    "meta.embedded.block.js": "javascript",
+                    "meta.embedded.block.html": "html",
+                    "meta.embedded.block.sql": "sql",
+                    "meta.embedded.block.hive": "hive-sql"
+                },
+                "tokenTypes": {
+                    "meta.*": "other"
                 }
             }
         ]
