@@ -1,6 +1,11 @@
 # Highlight String Code
 
 Highlight string as SQL, HTML, CSS or JavaScript in most languages.
+在代码中，高亮 SQL、HTML、CSS 或者 JavaScript 代码。
+
+## Documents
+
+[English](https://github.com/iuyoy/highlight-string-code/blob/master/README.md) | [中文文档](https://github.com/iuyoy/highlight-string-code/blob/master/docs/README_CN.md)
 
 ## Requirements
 
@@ -12,21 +17,20 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 - Commenting
 - Bracket matching
 - Closing pairs
-- Snippet selection
 
 ## Usages
 - SQL
-  1. Insert sign pair `--sql` and `;` to highlight one SQL sequence.<br>
+  1. Insert sign pair `--sql` and `;` to highlight single SQL sequence.<br>
   ![single SQL stirng with Sign](./docs/single_SQL_with_Sign.png)
   2. Insert sign pair `--beginsql` or `--begin-sql` and `--endsql` or `--end-sql` to highlight one and more SQL suquences.<br>
   ![multi SQL stirng with Sign](./docs/multi_SQL_with_Sign.png)
   3. Any SQL sequence starts with **UPPERCASE** keyword (such as `SELECT`, `INSERT`, `UPDATE` and etc) and one of **WHITESPACE** character(such as `' ','\n','\t','\r','\f'`), and ends with `;` will be highlighted automatically.<br>
   ![SQL stirng no Sign](./docs/SQL_without_Sign.png)
 - HTML, CSS, JS
-  - Insert sign pairs `<!--html-->` and `<!--!html-->`, `/*css*/` and `/*!css*/`, `//js` and `//!js` to highlight one and more HTML suquences. Other comments can be added after *language name*.<br>
+  - Insert sign pairs `<!--html-->` and `<!--!html-->`, `/*css*/` and `/*!css*/`, `//js` and `//!js` to highlight one and more HTML, CSS or JS suquences. Other comments can be added after *language name*.<br>
   ![HTML with Sign](./docs/HTML_with_Sign.png)
 - Other
-  - Highlight Variables in *highlighted* string code for `SQL` and `HTML`<br>
+  - Highlight Variables between `{` and `}` in *highlighted* string code for `SQL` and `HTML` string. The idea is for `python` and `shell`, but works for any language now.<br>
   ![Variables](./docs/SQL_with_variable.png)
 
 ## Installation
@@ -39,7 +43,7 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 See [CHANGELOG.md](./CHANGELOG.md)
 
 ## Issues
-If you have any suggestion or issue, please feel free to subbmit it at [Repo Issues](https://github.com/iuyoy/highlight-string-code/issues)
+If you have any suggestion or issue, please feel free to subbmit it at [Github Issues](https://github.com/iuyoy/highlight-string-code/issues) page.
 
 ## References
 

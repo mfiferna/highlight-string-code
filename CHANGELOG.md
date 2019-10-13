@@ -7,9 +7,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## TODO Notes
 - [x] Publish extension
 - [ ] Add switches for Highlight Signs
-- [ ] Add Chinese usage
+- [x] Add Chinese usage
 
 ## [Realease]
+
+### [v0.4.1]
+- Add Chinese Readme file.
 
 ### [v0.4.0]
 - Reconstitute language injections
