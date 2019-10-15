@@ -5,7 +5,7 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 
 ## 文档
 
-[English](https://github.com/iuyoy/highlight-string-code/README.md) | [中文文档](https://github.com/iuyoy/highlight-string-code/docs/README_CN.md)
+[English](https://github.com/iuyoy/highlight-string-code/blob/master/README.md) | [中文文档](https://github.com/iuyoy/highlight-string-code/blob/master/docs/README_CN.md)
 
 ## 需求
 
