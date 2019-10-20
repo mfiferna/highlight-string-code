@@ -11,6 +11,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Realease]
 
+### [v0.4.2]
+- Add sign pair snippets for highlighting block.
+- Fix some typos.
+
 ### [v0.4.1]
 - Add Chinese Readme file.
 

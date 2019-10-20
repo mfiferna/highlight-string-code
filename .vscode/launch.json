@@ -2,11 +2,19 @@
   "version": "0.1.0",
   "configurations": [
       {
-          "name": "Debug extension",
           "type": "extensionHost",
           "request": "launch",
+          "name": "Launch Extension",
           "runtimeExecutable": "${execPath}",
-          "args": ["--extensionDevelopmentPath=${workspaceRoot}" ]
+          "args": [
+              "--extensionDevelopmentPath=${workspaceFolder}"
+          ],
+          "outFiles": [
+              "${workspaceFolder}/out/**/*.js"
+          ],
+          "preLaunchTask": "npm run build"
       }
   ]
 }
+
+

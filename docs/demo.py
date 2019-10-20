@@ -49,14 +49,14 @@ sql = 'SELECT * FROM schema_name.table_name;'
 # ANCHOR HTML
 HTML = """
 <!--html-->
-<h1>I am a lighlighted html</h1>
+<h1>I am a highlighted html</h1>
 hello
 <p>world</p>
 <!--!html-->
 <!--htmlcomment-->
-<h1>I am also a lighlighted html</h1>
+<h1>I am also a highlighted html</h1>
 <!--!htmlcomment-->
-<h1>I amd not a lighlighted html</h1>
+<h1>I amd not a highlighted html</h1>
 """
 # ANCHOR JS
 js = """
@@ -101,4 +101,3 @@ WHERE birth > '{day}'
     AND `name` != '{banned}man'
 ;
 """.format(banned='bat', day='2019-09-26')
-

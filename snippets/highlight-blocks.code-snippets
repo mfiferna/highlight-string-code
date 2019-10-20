@@ -1,0 +1,62 @@
+{
+    "Highlisht javascript": {
+        "prefix": [
+            "hjs",
+            "highlight-javascript"
+        ],
+        "body": [
+            "// js",
+            "$0",
+            "// !js"
+        ],
+        "description": "Sign pair for highlighting javascript code."
+    },
+    "Highlisht html": {
+        "prefix": [
+            "hhtml",
+            "highlight-html"
+        ],
+        "body": [
+            "<!-- html -->",
+            "$0",
+            "<!-- !html -->"
+        ],
+        "description": "Sign pair for highlighting html code."
+    },
+    "Highlisht css": {
+        "prefix": [
+            "hcss",
+            "highlight-css"
+        ],
+        "body": [
+            "/* css */",
+            "$0",
+            "/* !css */"
+        ],
+        "description": "Sign pair for highlighting css code."
+    },
+    "Highlisht sql": {
+        "prefix": [
+            "hsql",
+            "highlight-sql"
+        ],
+        "body": [
+            "-- beginsql",
+            "$0",
+            "-- endsql"
+        ],
+        "description": "Sign pair for highlighting sql code."
+    },
+    "Highlisht hive-sql": {
+        "prefix": [
+            "hhql",
+            "highlight-hive-sql"
+        ],
+        "body": [
+            "-- hive",
+            "$0",
+            "-- !hive"
+        ],
+        "description": "Sign pair for highlighting hive-sql code."
+    }
+}

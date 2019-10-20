@@ -2,7 +2,7 @@
     "name": "highlight-string-code",
     "displayName": "Highlight String Code",
     "description": "Highlight string as SQL, HTML, CSS or JS in most languages. 高亮内嵌的SQL，HTML， CSS或者JS",
-    "version": "0.4.1",
+    "version": "0.4.2",
     "publisher": "iuyoy",
     "author": {
         "name": "iuyoy"
@@ -20,7 +20,8 @@
     },
     "categories": [
         "Programming Languages",
-        "Snippets"
+        "Snippets",
+        "Other"
     ],
     "keywords": [
         "javascript",
@@ -29,6 +30,7 @@
         "sql",
         "hive",
         "highlight",
+        "hightlight",
         "embedded language"
     ],
     "contributes": {
@@ -85,6 +87,16 @@
                     "meta.*": "other"
                 }
             }
+        ],
+        "snippets": [
+            {
+                "language": "",
+                "path": "./snippets/highlight-blocks.code-snippets"
+            }
         ]
+    },
+    "scripts": {
+        "build": "node ./build/build",
+        "genSnippets": "node ./build/generateSnippets"
     }
 }

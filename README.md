@@ -17,8 +17,21 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 - Commenting
 - Bracket matching
 - Closing pairs
+- Snippets
 
 ## Usages
+
+| Language | Sign pair                     | Snippets                      | Comment|
+| -------- | ----------------------------- | ----------------------------- |-|
+| SQL      | `--sql`, `;`                  | -                             |
+| SQL      | `--beginsql`, `--endsql`      | `hsql`, `highlight-sql`       |
+| SQL      | `--begin-sql`, `--end-sql`    | -                             |
+| SQL      | UPPERCASE KEYWORD, `;`        | -                             |
+| Hive SQL | `--hive`, `--!hive`           | `hhsql`, `highlight-hive-sql` | [Hive SQL](https://marketplace.visualstudio.com/items?itemName=josephtbradley.hive-sql) is required 
+| HTML     | `<!--html-->`, `<!--!html-->` | `hhtml`, `highlight-html`     |
+| CSS      | `/*css*/`, `/*!css*/`         | `hcss`, `highlight-css`       |
+| JS       | `//js`, `//!js`               | `hjs`, `highlight-javascript` |
+
 - SQL
   1. Insert sign pair `--sql` and `;` to highlight single SQL sequence.<br>
   ![single SQL stirng with Sign](./docs/single_SQL_with_Sign.png)
@@ -32,6 +45,10 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 - Other
   - Highlight Variables between `{` and `}` in *highlighted* string code for `SQL` and `HTML` string. The idea is for `python` and `shell`, but works for any language now.<br>
   ![Variables](./docs/SQL_with_variable.png)
+- Snippets
+  - Type `h{language_abbr}` or `highlight-{language_name}` to insert a highlight block sign pair. For example, type `hjs` or `highlight-javascript` to insert `// js` and `// !js`. 
+  ![Snippets](./docs/hjs-snippets.png)
+
 
 ## Installation
 

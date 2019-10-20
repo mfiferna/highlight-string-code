@@ -83,8 +83,8 @@
             ]
         },
         "highlight-string-js": {
-            "begin": "(// *(js).*)",
-            "end": "(// *(\\!js).*)",
+            "begin": "(// *(js)[^/]*)",
+            "end": "(// *(\\!js)[^/]*)",
             "captures": {
                 "1": {
                     "name": "comment.line.double-slash.js"

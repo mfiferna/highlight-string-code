@@ -17,8 +17,21 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 - 按子语言的规则注释
 - 括号高亮匹配
 - 括号自动配合
+- 快速输入代码块高亮标记对
 
 ## 用法
+
+| 支持语言 | 代码块高亮标记对              | 代码块高亮标记对快捷键        | 备注                                                                                            |
+| -------- | ----------------------------- | ----------------------------- | ----------------------------------------------------------------------------------------------- |
+| SQL      | `--sql` & `;`                 | -                             |
+| SQL      | `--beginsql`, `--endsql`      | `hsql`, `highlight-sql`       |
+| SQL      | `--begin-sql`, `--end-sql`    | -                             |
+| SQL      | UPPERCASE KEYWORD, `;`        | -                             |
+| Hive SQL | `--hive`, `--!hive`           | `hhsql`, `highlight-hive-sql` | 需要插件[Hive SQL](https://marketplace.visualstudio.com/items?itemName=josephtbradley.hive-sql) |
+| HTML     | `<!--html-->`, `<!--!html-->` | `hhtml`, `highlight-html`     |
+| CSS      | `/*css*/`, `/*!css*/`         | `hcss`, `highlight-css`       |
+| JS       | `//js`, `//!js`               | `hjs`, `highlight-javascript` |
+
 - SQL
   1. 在 `--sql` 和 `;` 中插入单条SQL语句。<br>
   ![single SQL stirng with Sign](./single_SQL_with_Sign.png)
@@ -32,6 +45,9 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 - 其他
   - 在嵌套语言是 `SQL` 和 `HTML` 的代码中，高亮 `{` 和 `}` 中出现的变量。本意是给 PYTHON 和 SHELL 用的，但是目前对所有的语言都生效。<br>
   ![Variables](./SQL_with_variable.png)
+- 快速输入代码块高亮标记对
+  - 输入 `h{language_abbr}` 或 `highlight-{language_name}` 来插入用于高亮代码的代码块标记对。例如， 输入 `hjs` 或者 `highlight-javascript` 来快速插入 `// js` 和 `// !js`。
+  ![Snippets](./hjs-snippets.png)
 
 ## 安装
 
