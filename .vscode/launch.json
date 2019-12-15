@@ -1,6 +1,7 @@
 {
   "version": "0.1.0",
   "configurations": [
+
       {
           "type": "extensionHost",
           "request": "launch",
@@ -8,11 +9,7 @@
           "runtimeExecutable": "${execPath}",
           "args": [
               "--extensionDevelopmentPath=${workspaceFolder}"
-          ],
-          "outFiles": [
-              "${workspaceFolder}/out/**/*.js"
-          ],
-          "preLaunchTask": "npm run build"
+          ]
       }
   ]
 }

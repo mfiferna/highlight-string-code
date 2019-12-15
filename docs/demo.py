@@ -101,3 +101,14 @@ WHERE birth > '{day}'
     AND `name` != '{banned}man'
 ;
 """.format(banned='bat', day='2019-09-26')
+
+# ANCHOR yaml test
+"""
+--- #yaml
+name: test
+values: 
+  - good
+  - better
+  # comment
+#!yaml
+"""

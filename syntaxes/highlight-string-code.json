@@ -17,6 +17,9 @@
         },
         {
             "include": "#highlight-string-hive"
+        },
+        {
+            "include": "#highlight-string-yaml"
         }
     ],
     "repository": {
@@ -204,6 +207,27 @@
                 },
                 {
                     "include": "source.hive"
+                }
+            ]
+        },
+        "highlight-string-yaml": {
+            "begin": "( *--- *#yaml)",
+            "end": "( *# *!yaml)",
+            "captures": {
+                "1": {
+                    "name": "comment.line.double-slash.asciidoc"
+                },
+                "2": {
+                    "name": "entity.name.function"
+                }
+            },
+            "contentName": "meta.embedded.block.yaml",
+            "patterns": [
+                {
+                    "include": "#keep-variables"
+                },
+                {
+                    "include": "source.yaml"
                 }
             ]
         }

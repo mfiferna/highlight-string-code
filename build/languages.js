@@ -4,7 +4,7 @@ const embedded_languages = [
     {attr:'css', name: 'css', language: 'css', identifiers: ['css', 'css.erb'], source: 'source.css', block_begin: '/* css */', block_end: '/* !css */' },
     {attr:'sql', name: 'sql', language: 'sql', identifiers: ['sql', 'ddl', 'dml'], source: 'source.sql', block_begin: '-- beginsql', block_end: '-- endsql' },
     {attr:'hql', name: 'hive-sql', language: 'hive-sql', identifiers: ['sql', 'hql', 'hiveql'], source: 'source.hive-sql', block_begin: '-- hive', block_end: '-- !hive' },
+    {attr:'yaml', name: 'yaml', language: 'yaml', identifiers: ['yaml'], source: 'source.yaml', block_begin: '--- #yaml', block_end: '#!yaml' }
 ]
 
 exports.embedded_languages = embedded_languages;
-

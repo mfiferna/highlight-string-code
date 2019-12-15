@@ -31,6 +31,7 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 | HTML     | `<!--html-->`, `<!--!html-->` | `hhtml`, `highlight-html`     |
 | CSS      | `/*css*/`, `/*!css*/`         | `hcss`, `highlight-css`       |
 | JS       | `//js`, `//!js`               | `hjs`, `highlight-javascript` |
+| Yaml     | `--- #yaml`, `#!yaml`         | `hyaml`, `highlight-yaml`     |
 
 - SQL
   1. 在 `--sql` 和 `;` 中插入单条SQL语句。<br>
@@ -42,6 +43,8 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 - HTML, CSS, JS
   - 出现在标志 `<!--html-->` 和 `<!--!html-->`、 `/*css*/` 和 `/*!css*/` 以及 `//js` 和 `//!js` 中的代码会分别被高亮为 HTML、 CSS 或者 JS。其他注释可以出现在 *标志语言* 之后。<br>
   ![HTML with Sign](./HTML_with_Sign.png)
+- Yaml
+  - 出现在 `--- #yaml` 和 `#!yaml` 中的代码会被高亮为YAML。
 - 其他
   - 在嵌套语言是 `SQL` 和 `HTML` 的代码中，高亮 `{` 和 `}` 中出现的变量。本意是给 PYTHON 和 SHELL 用的，但是目前对所有的语言都生效。<br>
   ![Variables](./SQL_with_variable.png)
@@ -56,7 +59,10 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 
 ## 更新日志
 
-见 [CHANGELOG.md](./CHANGELOG.md)
+### [v0.4.2]
+- 支持高亮 Yaml
+
+更多信息请见 [CHANGELOG.md](./CHANGELOG.md)
 
 ## 疑问？
 

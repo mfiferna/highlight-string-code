@@ -2,7 +2,7 @@
     "name": "highlight-string-code",
     "displayName": "Highlight String Code",
     "description": "Highlight string as SQL, HTML, CSS or JS in most languages. 高亮内嵌的SQL，HTML， CSS或者JS",
-    "version": "0.4.2",
+    "version": "0.4.3",
     "publisher": "iuyoy",
     "author": {
         "name": "iuyoy"
@@ -29,6 +29,7 @@
         "html",
         "sql",
         "hive",
+        "yaml",
         "highlight",
         "hightlight",
         "embedded language"

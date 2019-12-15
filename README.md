@@ -22,7 +22,7 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 ## Usages
 
 | Language | Sign pair                     | Snippets                      | Comment|
-| -------- | ----------------------------- | ----------------------------- |-|
+| -------- | ----------------------------- | ----------------------------- | -------|
 | SQL      | `--sql`, `;`                  | -                             |
 | SQL      | `--beginsql`, `--endsql`      | `hsql`, `highlight-sql`       |
 | SQL      | `--begin-sql`, `--end-sql`    | -                             |
@@ -31,6 +31,7 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 | HTML     | `<!--html-->`, `<!--!html-->` | `hhtml`, `highlight-html`     |
 | CSS      | `/*css*/`, `/*!css*/`         | `hcss`, `highlight-css`       |
 | JS       | `//js`, `//!js`               | `hjs`, `highlight-javascript` |
+| Yaml     | `--- #yaml`, `#!yaml`         | `hyaml`, `highlight-yaml`     |
 
 - SQL
   1. Insert sign pair `--sql` and `;` to highlight single SQL sequence.<br>
@@ -42,6 +43,8 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 - HTML, CSS, JS
   - Insert sign pairs `<!--html-->` and `<!--!html-->`, `/*css*/` and `/*!css*/`, `//js` and `//!js` to highlight one and more HTML, CSS or JS suquences. Other comments can be added after *language name*.<br>
   ![HTML with Sign](./docs/HTML_with_Sign.png)
+- Yaml
+  - Insert sign pairs `--- #yaml` and `#!yaml` to highlight YAML suquences.
 - Other
   - Highlight Variables between `{` and `}` in *highlighted* string code for `SQL` and `HTML` string. The idea is for `python` and `shell`, but works for any language now.<br>
   ![Variables](./docs/SQL_with_variable.png)
@@ -57,10 +60,13 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 
 ## Release Notes
 
-See [CHANGELOG.md](./CHANGELOG.md)
+### [v0.4.2]
+- support Yaml
+
+Please see [CHANGELOG.md](./CHANGELOG.md) for more information.
 
 ## Issues
-If you have any suggestion or issue, please feel free to subbmit it at [Github Issues](https://github.com/iuyoy/highlight-string-code/issues) page.
+If you have any suggestion or issue, please feel free to submit it at [Github Issues](https://github.com/iuyoy/highlight-string-code/issues) page.
 
 ## References
 

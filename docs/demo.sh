@@ -105,3 +105,14 @@ WHERE birth > "'${day}'"
     AND name != "'${banned}man'"
 ;
 '
+
+# ANCHOR yaml test
+"
+--- #yaml
+name: test
+values: 
+  - good
+  - better
+  # comment
+# !yaml
+"

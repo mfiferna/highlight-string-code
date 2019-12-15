@@ -5,7 +5,7 @@ const { embedded_languages } = require('./languages');
 
 const generateSnippets = () => {
     return embedded_languages.reduce((out, embedded_languages) => {
-        out[`Highlisht ${embedded_languages.language}`] = {
+        out[`Highlight ${embedded_languages.language}`] = {
             "prefix": [
                 `h${embedded_languages.attr}`,
                 `highlight-${embedded_languages.language}`
@@ -31,7 +31,7 @@ exports.updateSnippets = () => {
 /*
 Snippet Template
 {
-    "Highlisht js": {
+    "Highlight js": {
         "prefix": [
             "hjs",
             "highlight-js"

@@ -1,5 +1,5 @@
 {
-    "Highlisht javascript": {
+    "Highlight javascript": {
         "prefix": [
             "hjs",
             "highlight-javascript"
@@ -11,7 +11,7 @@
         ],
         "description": "Sign pair for highlighting javascript code."
     },
-    "Highlisht html": {
+    "Highlight html": {
         "prefix": [
             "hhtml",
             "highlight-html"
@@ -23,7 +23,7 @@
         ],
         "description": "Sign pair for highlighting html code."
     },
-    "Highlisht css": {
+    "Highlight css": {
         "prefix": [
             "hcss",
             "highlight-css"
@@ -35,7 +35,7 @@
         ],
         "description": "Sign pair for highlighting css code."
     },
-    "Highlisht sql": {
+    "Highlight sql": {
         "prefix": [
             "hsql",
             "highlight-sql"
@@ -47,7 +47,7 @@
         ],
         "description": "Sign pair for highlighting sql code."
     },
-    "Highlisht hive-sql": {
+    "Highlight hive-sql": {
         "prefix": [
             "hhql",
             "highlight-hive-sql"
@@ -58,5 +58,17 @@
             "-- !hive"
         ],
         "description": "Sign pair for highlighting hive-sql code."
+    },
+    "Highlight yaml": {
+        "prefix": [
+            "hyaml",
+            "highlight-yaml"
+        ],
+        "body": [
+            "--- #yaml",
+            "$0",
+            "#!yaml"
+        ],
+        "description": "Sign pair for highlighting yaml code."
     }
 }
