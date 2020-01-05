@@ -11,7 +11,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Realease]
 
-### [v0.4.2]
+### [v0.4.4]
+- Add "\s*" pattern before some signs to fix [Issue#1](https://github.com/iuyoy/highlight-string-code/issues/1).
+
+### [v0.4.3]
 - Add yaml support
 - Fix typos.
 

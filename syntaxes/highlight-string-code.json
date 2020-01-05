@@ -68,8 +68,8 @@
             ]
         },
         "highlight-string-css": {
-            "begin": "(/\\* *(css).*\\*/)",
-            "end": "(/\\* *(\\!css).*\\*/)",
+            "begin": "(\\s*/\\* *(css).*\\*/)",
+            "end": "(\\s*/\\* *(\\!css).*\\*/)",
             "captures": {
                 "1": {
                     "name": "comment.inline.css"
@@ -86,8 +86,8 @@
             ]
         },
         "highlight-string-js": {
-            "begin": "(// *(js)[^/]*)",
-            "end": "(// *(\\!js)[^/]*)",
+            "begin": "(\\s*// *(js)[^/]*)",
+            "end": "(\\s*// *(\\!js)[^/]*)",
             "captures": {
                 "1": {
                     "name": "comment.line.double-slash.js"
@@ -104,8 +104,8 @@
             ]
         },
         "highlight-string-html": {
-            "begin": "(<!-- *(html).*-->)",
-            "end": "(<!-- *(\\!html).*-->)",
+            "begin": "(\\s*<!-- *(html).*-->)",
+            "end": "(\\s*<!-- *(\\!html).*-->)",
             "captures": {
                 "1": {
                     "name": "comment.block.html"
@@ -124,7 +124,7 @@
         "highlight-string-sql": {
             "patterns": [
                 {
-                    "begin": "(-- *(sql).*)",
+                    "begin": "(\\s*-- *(sql).*)",
                     "beginCaptures": {
                         "1": {
                             "name": "comment.line.double-dash.sql"
@@ -147,8 +147,8 @@
                     ]
                 },
                 {
-                    "begin": "(-- *(beginsql|begin-sql).*)",
-                    "end": "(-- *(endsql|end-sql).*)",
+                    "begin": "(\\s*-- *(beginsql|begin-sql).*)",
+                    "end": "(\\s*-- *(endsql|end-sql).*)",
                     "captures": {
                         "1": {
                             "name": "comment.line.double-dash.sql"
@@ -190,8 +190,8 @@
             ]
         },
         "highlight-string-hive": {
-            "begin": "(-- *(hive).*)",
-            "end": "(-- *(!hive).*)",
+            "begin": "(\\s*-- *(hive).*)",
+            "end": "(\\s*-- *(!hive).*)",
             "captures": {
                 "1": {
                     "name": "comment.line.double-slash.asciidoc"
@@ -211,8 +211,8 @@
             ]
         },
         "highlight-string-yaml": {
-            "begin": "( *--- *#yaml)",
-            "end": "( *# *!yaml)",
+            "begin": "(\\s*--- *#yaml)",
+            "end": "(\\s*# *!yaml)",
             "captures": {
                 "1": {
                     "name": "comment.line.double-slash.asciidoc"

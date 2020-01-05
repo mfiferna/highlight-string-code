@@ -59,7 +59,11 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 
 ## 更新日志
 
-### [v0.4.2]
+### [v0.4.4]
+- 在语言标记前增加空白符匹配来修正[Issue#1](https://github.com/iuyoy/highlight-string-code/issues/1)
+
+
+### [v0.4.3]
 - 支持高亮 Yaml
 
 更多信息请见 [CHANGELOG.md](./CHANGELOG.md)
