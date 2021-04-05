@@ -70,8 +70,15 @@ function b() {
     return 123;
 };
 //!js
+
+http: // js
+var a = 2;
+// !js
+
 var a=1;
+://js
 alert(a);
+//!js
 console.log(a);
 function b() {
     return 123;

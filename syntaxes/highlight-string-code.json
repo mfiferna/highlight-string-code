@@ -86,7 +86,7 @@
             ]
         },
         "highlight-string-js": {
-            "begin": "(\\s*// *(js)[^/]*)",
+            "begin": "(\\s*([^:]|^)// *(js)[^/]*)",
             "end": "(\\s*// *(\\!js)[^/]*)",
             "captures": {
                 "1": {

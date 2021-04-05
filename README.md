@@ -1,6 +1,7 @@
 # Highlight String Code
 
 Highlight string as SQL, HTML, CSS or JavaScript in most languages.
+
 在代码中，高亮 SQL、HTML、CSS 或者 JavaScript 代码。
 
 ## Documents
@@ -27,7 +28,7 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 | SQL      | `--beginsql`, `--endsql`      | `hsql`, `highlight-sql`       |
 | SQL      | `--begin-sql`, `--end-sql`    | -                             |
 | SQL      | UPPERCASE KEYWORD, `;`        | -                             |
-| Hive SQL | `--hive`, `--!hive`           | `hhsql`, `highlight-hive-sql` | [Hive SQL](https://marketplace.visualstudio.com/items?itemName=josephtbradley.hive-sql) is required 
+| Hive SQL | `--hive`, `--!hive`           | `hhsql`, `highlight-hive-sql` | [Hive SQL](https://marketplace.visualstudio.com/items?itemName=josephtbradley.hive-sql) is required
 | HTML     | `<!--html-->`, `<!--!html-->` | `hhtml`, `highlight-html`     |
 | CSS      | `/*css*/`, `/*!css*/`         | `hcss`, `highlight-css`       |
 | JS       | `//js`, `//!js`               | `hjs`, `highlight-javascript` |
@@ -52,7 +53,6 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
   - Type `h{language_abbr}` or `highlight-{language_name}` to insert a highlight block sign pair. For example, type `hjs` or `highlight-javascript` to insert `// js` and `// !js`. 
   ![Snippets](./docs/hjs-snippets.png)
 
-
 ## Installation
 
 - Install from VS Code extensions (`ctrl + shift + x` or `cmd + shift + x` on mac).
@@ -60,17 +60,25 @@ Highlight string as SQL, HTML, CSS or JavaScript in most languages.
 
 ## Release Notes
 
+### [v0.4.5]
+
+- Modify js highlight pattern to fix [Issue#5](https://github.com/iuyoy/highlight-string-code/issues/5).
+
 ### [v0.4.4]
+
 - Add "\s*" pattern before some signs to fix [Issue#1](https://github.com/iuyoy/highlight-string-code/issues/1).
 
 ### [v0.4.3]
+
 - Add yaml support
 - Fix typos.
 
 Please see [CHANGELOG.md](./CHANGELOG.md) for more information.
 
 ## Issues
+
 If you have any suggestion or issue, please feel free to submit it at [Github Issues](https://github.com/iuyoy/highlight-string-code/issues) page.
+Any pull requests to add more features or improve the experience are also welcome.
 
 ## References
 
